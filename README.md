@@ -1,5 +1,6 @@
 # RPiCognitiveService
 Microsoft Cognitive Service (Emotion, Face and Computer Vision) Demo UWP App for RPi with Windows 10 IoT Core.
+![image](https://github.com/shijiong/RPiCognitiveService/blob/master/Screenshot.jpg)
 # Hardware Requirement
 Network Access for RPi.
 # Build and Run
