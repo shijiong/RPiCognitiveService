@@ -9,3 +9,5 @@ Copy and Paste your Emotion, Face and Computer Vision API Key from Azure Portal 
 Press Debug and run.
 # Work to do
 Add Camera based Cognitive Service in the near future.
+# Thanks
+This work is achieved based on the ComputerVision.UWP by sherlockchou86 (https://github.com/sherlockchou86/ComputerVision.UWP).
