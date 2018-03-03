@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -34,7 +34,6 @@ namespace RPiCognitiveServie
     /// </summary>
     public sealed partial class PhotoPage : Page
     {
-        string key = "b0938271ac3742debb8c9cd294a9f031";  //API key
         Size size_image;  //当前图片实际size
         AnalysisResult thisresult;  //当前分析结果
 
