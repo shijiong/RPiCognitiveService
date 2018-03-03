@@ -34,6 +34,7 @@ namespace RPiCognitiveServie
     /// </summary>
     public sealed partial class PhotoPage : Page
     {
+        string key = "Your Computer Vision Key API";  //API key
         Size size_image;  //当前图片实际size
         AnalysisResult thisresult;  //当前分析结果
 
