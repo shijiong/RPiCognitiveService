@@ -37,8 +37,8 @@ namespace RPiCognitiveServie
     public sealed partial class FacePage : Page
     {
         
-        string key_face = "7c71de613e24483f9789a5ad6e9aa764";
-        string key_emotion = "e6bac2af3d574eb8b9b859523507d84d";
+        string key_face = "Your Face API Key";
+        string key_emotion = "Your Emotion API Key";
 
         Size size_image;
         Face[] faces;
