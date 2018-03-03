@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,6 +24,8 @@ using Windows.UI.Xaml.Navigation;
 using Windows.UI;
 using System.Threading.Tasks;
 using Windows.Storage.Search;
+using Windows.Media.MediaProperties;
+using Windows.Storage.Streams;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 
@@ -35,8 +37,8 @@ namespace RPiCognitiveServie
     public sealed partial class FacePage : Page
     {
         
-        string key_face = "Your Face API Key";
-        string key_emotion = "your Emotion API Key";
+        string key_face = "7c71de613e24483f9789a5ad6e9aa764";
+        string key_emotion = "e6bac2af3d574eb8b9b859523507d84d";
 
         Size size_image;
         Face[] faces;
@@ -46,12 +48,125 @@ namespace RPiCognitiveServie
         StorageFile Picker_SelectedFile;
         private QueryOptions queryOptions;
 
+        private MediaCapture mediaCapture;
+        private StorageFile photoFile;
+        private readonly string PHOTO_FILE_NAME = "photo.jpg";
+        private bool isPreviewing;
+
         public FacePage()
         {
             this.InitializeComponent();
             queryOptions = new QueryOptions(CommonFileQuery.OrderByName, mediaFileExtensions);
             queryOptions.FolderDepth = FolderDepth.Shallow;
+            isPreviewing = false;
+            initCamera();
         }
+
+        private async void initCamera()
+        {
+            try
+            {
+                if (mediaCapture != null)
+                {
+                    // Cleanup MediaCapture object
+                    if (isPreviewing)
+                    {
+                        await mediaCapture.StopPreviewAsync();
+                        captureImage.Source = null;
+                        isPreviewing = false;
+                    }
+                    mediaCapture.Dispose();
+                    mediaCapture = null;
+                }
+
+                txtLocation.Text = "Initializing camera to capture audio and video...";
+                // Use default initialization
+                mediaCapture = new MediaCapture();
+                await mediaCapture.InitializeAsync();
+
+                // Set callbacks for failure and recording limit exceeded
+                txtLocation.Text = "Device successfully initialized for video recording!";
+                mediaCapture.Failed += new MediaCaptureFailedEventHandler(mediaCapture_Failed);
+                // Start Preview                
+                previewElement.Source = mediaCapture;
+                await mediaCapture.StartPreviewAsync();
+                isPreviewing = true;
+                txtLocation.Text = "Camera preview succeeded";
+
+                // Enable buttons for video and photo capture
+                btnTakePhoto.IsEnabled = true;
+
+            }
+            catch (Exception ex)
+            {
+                txtLocation.Text = "Unable to initialize camera for audio/video mode: " + ex.Message;
+            }
+        }
+
+        private async void mediaCapture_Failed(MediaCapture currentCaptureObject, MediaCaptureFailedEventArgs currentFailure)
+        {
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, async () =>
+            {
+                try
+                {
+                    txtLocation.Text = "MediaCaptureFailed: " + currentFailure.Message;
+                }
+                catch (Exception)
+                {
+                }
+                finally
+                {
+                    btnTakePhoto.IsEnabled = false;
+                    txtLocation.Text += "\nCheck if camera is diconnected. Try re-launching the app";
+                }
+            });
+        }
+
+        private async void takePhoto_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                btnTakePhoto.IsEnabled = false;
+                captureImage.Source = null;
+                //存储照片
+                photoFile = await KnownFolders.PicturesLibrary.CreateFileAsync(
+                    PHOTO_FILE_NAME, CreationCollisionOption.GenerateUniqueName);
+                ImageEncodingProperties imageProperties = ImageEncodingProperties.CreateJpeg();
+                await mediaCapture.CapturePhotoToStorageFileAsync(imageProperties, photoFile);
+                btnTakePhoto.IsEnabled = true;
+                txtLocation.Text = "Take Photo succeeded: " + photoFile.Path;
+                //获取照片
+                IRandomAccessStream photoStream = await photoFile.OpenReadAsync();
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.SetSource(photoStream);
+                captureImage.Source = bitmap;
+                Picker_SelectedFile= photoFile;
+                SelectFile();
+            }
+            catch (Exception ex)
+            {
+                txtLocation.Text = ex.Message;
+                Cleanup();
+            }
+        }
+
+        private async void Cleanup()
+        {
+            if (mediaCapture != null)
+            {
+                // Cleanup MediaCapture object
+                if (isPreviewing)
+                {
+                    await mediaCapture.StopPreviewAsync();
+                    captureImage.Source = null;
+                    isPreviewing = false;
+                }
+                mediaCapture.Dispose();
+                mediaCapture = null;
+            }
+            btnTakePhoto.IsEnabled=false;
+        }
+
 
         private string[] mediaFileExtensions = {
             // picture
@@ -166,6 +281,18 @@ namespace RPiCognitiveServie
                     if (emotions != null)
                     {
                         DisplayEmotionsData(emotions);
+                    }
+
+                    //hide preview
+                    if (stpPreview.Visibility == Visibility.Collapsed)
+                    {
+                        stpPreview.Visibility = Visibility.Visible;
+                        btnShow.Content = "Hide Preview";
+                    }
+                    else
+                    {
+                        stpPreview.Visibility = Visibility.Collapsed;
+                        btnShow.Content = "Show Preview";
                     }
 
                     ringLoading.IsActive = false;
@@ -654,6 +781,21 @@ namespace RPiCognitiveServie
                     }
                 }
             }
+        }
+
+        private void btnShow_Click(object sender, RoutedEventArgs e)
+        {
+            if(stpPreview.Visibility==Visibility.Collapsed)
+            {
+                stpPreview.Visibility = Visibility.Visible;
+                btnShow.Content = "Hide Preview";
+            }
+            else
+            {
+                stpPreview.Visibility = Visibility.Collapsed;
+                btnShow.Content = "Show Preview";
+            }
+
         }
     }
 }

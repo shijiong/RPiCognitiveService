@@ -23,12 +23,16 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
                 <TextBox x:Name="txtFileName"  Grid.Column="0" VerticalAlignment="Bottom" TextChanged="txtFileName_TextChanged" />
                 <Button x:Name="btnOpen" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Open" Margin="10, 0, 0, 0" Click="btnOpen_Click" />
                 <Button x:Name="btnBrowse" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Browse" Margin="10, 0, 0, 0" Click="btnBrowse_Click" />
                 <Button x:Name="btnClear" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Clear" Margin="10, 0, 0, 0" Click="btnClear_Click" />
+                <Button x:Name="btnShow" Grid.Column="4" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Show Preview" Margin="10, 0, 0, 0" Click="btnShow_Click" />
+                <Button x:Name="btnTakePhoto" Grid.Column="5" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Take Photo" Margin="10, 0, 0, 0" IsEnabled="False" Click="takePhoto_Click" />
             </Grid>
         </StackPanel>
         <RelativePanel Name="spMain" Grid.Row="1">
@@ -48,6 +52,20 @@
                     >
             </Canvas>
         </RelativePanel>
+        <StackPanel x:Name="stpPreview" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,10" Visibility="Collapsed">
+            <StackPanel>
+                <TextBlock Name="PreviewTitle" Grid.Row="0" Grid.Column="0" Text="Preview"  Height="30" HorizontalAlignment="Center" Margin="0,20,0,0" />
+                <Canvas Name="PreviewCanvas" Grid.Row="1" Grid.Column="0" Width="300" Height="300" Background="Gray"  Margin="0,0,0,0">
+                    <CaptureElement x:Name="previewElement" Width="300" Height="300" HorizontalAlignment="Left"/>
+                </Canvas>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Name="ImageTitle" Grid.Row="0" Grid.Column="1" Text="Last captured photo" Height="30" HorizontalAlignment="Center" Margin="0,20,0,0" />
+                <Canvas Name="PhotoCanvas" Grid.Row="1" Grid.Column="1" Width="300" Height="300" Background="Gray"  Margin="20,0,0,0">
+                    <Image x:Name="captureImage" Width="300" Height="300" />
+                </Canvas>
+            </StackPanel>
+        </StackPanel>
         <Grid x:Name="grdPicker" Grid.Row="1" Margin="40"  Visibility="Collapsed">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80" />
