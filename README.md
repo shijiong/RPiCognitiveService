@@ -1,3 +1,4 @@
+
 # RPiCognitiveService
 Microsoft Cognitive Service (Emotion, Face and Computer Vision) Demo UWP App for RPi with Windows 10 IoT Core.
 # Version 2
@@ -7,6 +8,7 @@ The camera captured pictures are now supported in this version.
 ![image](https://github.com/shijiong/RPiCognitiveService/blob/master/Screenshot.jpg)
 # Hardware Requirement
 Network Access for RPi.
+LifeCam HD-3000 (Version 2)
 # Build and Run
 Open project with Visual Studio 2017 with Universal Windows App Development Tools installed;
 Choose ARM and Remote Machine, input the IP address of RPi;
