@@ -1,0 +1,1 @@
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\RPiCognitiveService.csproj;arm
