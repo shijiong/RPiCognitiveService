@@ -12,8 +12,6 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Core\RPiCognitiveService.exe
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\RPiCognitiveService.build.appxrecipe
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.CSharp.dll
-C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Net.Http.Extensions.dll
-C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Net.Http.Primitives.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.ComponentModel.DataAnnotations.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Core.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Net.dll
@@ -27,7 +25,6 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Xml.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.ProjectOxford.Common.dll
-C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.ProjectOxford.Emotion.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.ProjectOxford.Face.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.ProjectOxford.Vision.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.VisualBasic.dll
@@ -50,6 +47,7 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Threading.Tasks.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Threading.Timer.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Console.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Diagnostics.Debug.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.IO.FileSystem.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Net.Primitives.dll
@@ -66,6 +64,8 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.ComponentModel.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.ComponentModel.Annotations.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.ComponentModel.Primitives.dll
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.ComponentModel.TypeConverter.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Data.Common.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Diagnostics.Contracts.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -101,8 +101,10 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Reflection.Emit.Lightweight.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Reflection.Metadata.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.Numerics.dll
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.Serialization.Formatters.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.Serialization.Json.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.Serialization.Primitives.dll
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\bin\ARM\Debug\System.Runtime.Serialization.Xml.dll
@@ -163,6 +165,7 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Collections.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.IO.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.InteropServices.SR.resw
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Console.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Diagnostics.Debug.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.IO.FileSystem.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Net.Primitives.SR.resw
@@ -176,6 +179,8 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Collections.Specialized.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Data.Common.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Dynamic.Runtime.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Globalization.Extensions.SR.resw
@@ -200,7 +205,9 @@ C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiC
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Private.ServiceModel.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Reflection.Metadata.SR.resw
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.Numerics.SR.resw
+C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
 C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\RPiCognitiveService\RPiCognitiveService\obj\ARM\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
