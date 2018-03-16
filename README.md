@@ -1,6 +1,8 @@
 
 # RPiCognitiveService
 Microsoft Cognitive Service (Emotion, Face and Computer Vision) Demo UWP App for RPi with Windows 10 IoT Core.
+# Version 3
+Integrate Emotion recognition to Face API
 # Version 2
 The camera captured pictures are now supported in this version.
 ![image](https://github.com/shijiong/RPiCognitiveService/blob/master/Screenshot_2.jpg)
