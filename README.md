@@ -19,4 +19,4 @@ Press Debug and run.
 # Work to do
 Add Camera based Cognitive Service in the near future.
 # Thanks
-This work is achieved based on the ComputerVision.UWP by sherlockchou86 (https://www.hackster.io/JiongShi/csense-campus-environmental-surveillance-system-d12772).
+This work is achieved based on the ComputerVision.UWP by sherlockchou86 (https://github.com/sherlockchou86/ComputerVision.UWP).
